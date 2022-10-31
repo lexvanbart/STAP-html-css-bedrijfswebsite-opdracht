@@ -8,10 +8,7 @@
 4. [Opdracht 3: projecten](#opdracht-3-projecten)
 5. [Opdracht 4: services](#opdracht-4-services)
 7. [Opdracht 5: contactformulier en footer](#opdracht-5-contactformulier-en-footer)
-8. [Bonusopdracht](#bonusopdracht)
 9. [Schermontwerpen](#schermontwerpen)
-    1. [Basisontwerp](#basisontwerp)
-    2. [Bonusontwerp](#bonusontwerp)
 10. [Bijlage](#bijlage)
      1. [CSS structuur](#voorbeeld-css-structuur)
      2. [Dummy tekst](#dummy-tekst)
@@ -27,45 +24,21 @@ Om je rustig kennis te laten maken met alle verschillende technieken, raden we j
 beginnen. Voor het basisontwerp heb je kennis nodig van CSS Flexbox, positionering doormiddel van de `position` property
 en semantische HTML-elementen.
 
-Heb je tijd over? Dan kun je ervoor kiezen alle "toeters en bellen" van het bonusontwerp toe te voegen.
-Hiervoor heb je onder andere kennis nodig van pseudo-elementen, transities, het gebruik van vormen in CSS en gebruik
-van `z-index` om elementen boven elkaar te stapelen. Al deze technieken worden besproken in het bonushoofdstuk op
-EdHub (Hfst. 9).
-
 ![browser-screenshot](./assets/screenshots/browser-screenshot.png)
-
-*Let op:* bovenstaand voorbeeld bevat bonus-opdracht elementen!
 
 ## Opdracht 1: opzet
 
 Je gaat het ontwerp van deze webpagina zo gedetailleerd mogelijk namaken. Alle afbeeldingen en icoontjes die
 worden gebruikt in de designs, zijn aangeleverd in de `assets`-map van deze repository.
 
-In plaats van deze opdracht te clonen, maak je voor dit project een **eigen** project aan, _from scratch_! 
-Wanneer je aan een nieuw project gaat beginnen, maak je eerst een goede basis. Anders wordt jouw code al snel een
-rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
-
-### 1.1 Projectopzet
-
-- [ ] Maak een eigen project aan. Maak in het project alle benodigde bestanden aan, zoals een `index.html`, `styles.css`
-  , `.gitignore`, een `README.md`.
-- [ ] Download de afbeeldingen uit deze repository. Maak een map `assets` aan en zet alle afbeeldingen hierin. 
+- [ ] Maak in het project alle benodigde bestanden aan, zoals een `index.html`, `styles.css` en een `README.md`.
 - [ ] Zet alvast een structuur klaar in commentaar in jouw CSS-bestand. Je kunt [deze structuur](#voorbeeld-css-structuur)
   gebruiken, maar voel je vrij om een eigen structuur te bedenken.
-- [ ] Maak een repository aan op www.GitHub.com voor jouw project.
-- [ ] Initialiseer Git in jouw project. Maak een commit en koppel daarna jouw repository aan dit project volgens de
-  instructies op GitHub. Tip: weet je niet meer hoe dit moet? Volg dan de stappen uit de video (Hfst 4.2 van de cursus Git) één voor één op.
-- [ ] Wanner dit is gelukt, maak je een feature-branch aan (`git checkout -b uitwerkingen`).  Op deze branch schrijf je jouw uitwerkingen, zodat deze later gemakkelijk kunnen worden nagekeken in een Pull Request.
-
-### 1.2 Stylingopzet
-
 - [ ] Declareer alvast een CSS-reset in jouw CSS-bestand. *Pssst*: vergeet jouw stylesheet niet te koppelen aan
   jouw `index.html`.
-
 - [ ] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts kun
   je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
   als `font-family`.
-
 - [ ] De ontwerper heeft de gebruikte kleuren voor ons
   aangeleverd: [bekijk het kleurenpalet hier](https://coolors.co/5722cd-4b49e8-f2f0ff-ed4385-0c0c0c). Het is handig om
   deze kleuren bovenaan jouw CSS-bestand te plakken, zodat je ze gemakkelijk kunt kopiëren wanneer je ze nodig
@@ -109,7 +82,6 @@ jouw eigen plan! Als je meer houvast wil, bekijk dan eerst de aandachtspunten en
 
 * In de header is een *gradient* gebruikt met de aangeleverde kleuren blauw en paars. *Tip:* gebruik
   een [gradient-generator](https://cssgradient.io/) voor een mooi vloeiend verloop!
-
 * De links in de navigatiebalk linken naar hun bijbehorende *gebied* op de homepagina: dit noem je een **jumplink**. Dus
   als de gebruiker op "Contact Us" klikt, krijgt hij het contact-formulier-gedeelte van de homepagina te zien. Hoe je
   dit implementeert, kun je nalezen op EdHub ([Hfst. 5.3](https://edhub.novi.nl/study/courses/514/content/12673)) onder
@@ -192,39 +164,12 @@ aandachtspunten goed door en maak een duidelijk plan voor jezelf over hoe je dit
   formulier (of een ander omwikkelend element) bepalen hoe breed de velden moeten zijn.
 * *Tip*: je kunt placeholders stylen doormiddel van de `::placeholder`-selector!
 
-## Bonusopdracht
-
-1. Gebruik CSS-variabelen om de kleurcodes in op te slaan zodat je deze in jouw stylesheet kunt gebruiken.
-2. Zorg ervoor dat de lijnen tussen de verschillende secties schuin aflopen door een uitgerekte CSS driehoek toe te
-   voegen!
-3. Voeg de zwevende woorden "hello", "work" en "services" toe achter de content. Dit kun je doen door de tekst
-   letterlijk in de HTML te zetten, maar het is beter om dit te doen door een **pseudo-element** te gebruiken *(EdHub
-   Hfst. 9.2)*.
-4. De lijnen onder de project-titels wil je invoegen als een pseudo-element. Dit doe je door de
-   afbeeldingen door middel van de `background-image`-property op een pseudo-element te plaatsen. Op deze manier vervuil
-   je de HTML niet met "nutteloze" elementen.
-5. De gradients zijn in het bonusontwerp voorzien van een doorzichtige textuur. Deze kun je als pseudo-element via een background-image invoegen.
-   Let op dat de textuur **onder** de content moet komen te staan.
-   Lees [hier](https://css-tricks.com/perfect-full-page-background-image/) meer over de `background-image` property.
-6. Zorg ervoor dat er een transitie ontstaat wanneer de gebruiker over de project-links hovert *(EdHub Hfst. 9.5)*:
-
-![bonus-moving-link](./assets/screenshots/bonus/bonus-moving-link.gif)
-
 ## Schermontwerpen
-
-### Basisontwerp
 
 De screenshots zijn erg groot. Download de screenshots om ze te bekijken:
 
 - [Desktop design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/basic/basic-desktop.png)
 - [Mobiel design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/basic/basic-mobiel.png)
-
-### Bonusontwerp
-
-De screenshots zijn groot. Download de screenshots om ze te bekijken:
-
-- [Desktop design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/bonus/bonus-desktop.png)
-- [Mobiel design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/bonus/bonus-mobiel.png)
 
 ## Bijlage
 
