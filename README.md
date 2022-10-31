@@ -24,7 +24,7 @@ Om je rustig kennis te laten maken met alle verschillende technieken, raden we j
 beginnen. Voor het basisontwerp heb je kennis nodig van CSS Flexbox, positionering doormiddel van de `position` property
 en semantische HTML-elementen.
 
-![browser-screenshot](./assets/screenshots/browser-screenshot.png)
+![browser-screenshot](./assets/screenshots/screenshot.png)
 
 ## Opdracht 1: opzet
 
