@@ -10,39 +10,38 @@
 7. [Opdracht 5: contactformulier en footer](#opdracht-5-contactformulier-en-footer)
 9. [Schermontwerpen](#schermontwerpen)
 10. [Bijlage](#bijlage)
-     1. [CSS structuur](#voorbeeld-css-structuur)
-     2. [Dummy tekst](#dummy-tekst)
+    1. [CSS structuur](#voorbeeld-css-structuur)
+    2. [Dummy tekst](#dummy-tekst)
 
 ## Inleiding
 
 Het is tijd om jouw CSS-skills in de praktijk te brengen: je gaat de home-pagina van een bekend bedrijf ontwikkelen. De
 designers van dit bedrijf hebben, naar aanleiding van hun huisstijl, alle schermontwerpen al helemaal uitgedacht. Het
-enige wat jij als aanstormende web developer hoeft te doen, is daar een werkende versie van te maken! Je kunt de
-desktop- en mobiele designs [hier](#schermontwerpen) bekijken.
-
-Om je rustig kennis te laten maken met alle verschillende technieken, raden we je aan om bij het basis-ontwerp te
-beginnen. Voor het basisontwerp heb je kennis nodig van CSS Flexbox, positionering doormiddel van de `position` property
-en semantische HTML-elementen.
+enige wat jij als aanstormende web developer hoeft te doen, is daar een werkende versie van te maken! Hiervoor heb je
+kennis nodig van CSS Flexbox, positionering doormiddel van de `position` property, media queries en semantische HTML-elementen.
 
 ![browser-screenshot](./assets/screenshots/screenshot.png)
 
+Je kunt de desktop- en mobiele designs [hier](#schermontwerpen) bekijken.
+
 ## Opdracht 1: opzet
 
-Je gaat het ontwerp van deze webpagina zo gedetailleerd mogelijk namaken. Alle afbeeldingen en icoontjes die
-worden gebruikt in de designs, zijn aangeleverd in de `assets`-map van deze repository.
+Je gaat het ontwerp van deze webpagina zo gedetailleerd mogelijk namaken. Alle afbeeldingen en icoontjes die worden
+gebruikt in de designs, zijn aangeleverd in de `assets`-map van deze repository.
 
 - [ ] Maak in het project alle benodigde bestanden aan, zoals een `index.html`, `styles.css` en een `README.md`.
-- [ ] Zet alvast een structuur klaar in commentaar in jouw CSS-bestand. Je kunt [deze structuur](#voorbeeld-css-structuur)
+- [ ] Zet alvast een structuur klaar in commentaar in jouw CSS-bestand. Je
+  kunt [deze structuur](#voorbeeld-css-structuur)
   gebruiken, maar voel je vrij om een eigen structuur te bedenken.
 - [ ] Declareer alvast een CSS-reset in jouw CSS-bestand. *Pssst*: vergeet jouw stylesheet niet te koppelen aan
   jouw `index.html`.
-- [ ] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts kun
-  je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
+- [ ] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts
+  kun je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
   als `font-family`.
 - [ ] De ontwerper heeft de gebruikte kleuren voor ons
   aangeleverd: [bekijk het kleurenpalet hier](https://coolors.co/5722cd-4b49e8-f2f0ff-ed4385-0c0c0c). Het is handig om
-  deze kleuren bovenaan jouw CSS-bestand te plakken, zodat je ze gemakkelijk kunt kopiëren wanneer je ze nodig
-  hebt. *Tip*: je kunt ook gebruik maken van
+  deze kleuren bovenaan jouw CSS-bestand te plakken, zodat je ze gemakkelijk kunt kopiëren wanneer je ze nodig hebt. *
+  Tip*: je kunt ook gebruik maken van
   CSS-variabelen ([EdHub Hfst. 9.3](https://edhub.novi.nl/study/courses/514/content/12701)). Het gaat om de volgende
   HEX-codes:
     - Paars `#5722CD`;
@@ -56,9 +55,9 @@ worden gebruikt in de designs, zijn aangeleverd in de `assets`-map van deze repo
 
 ## Opdracht 2: header en introductie
 
-Je begint met het maken van de header en het introductieblok. Hiervoor heb je op voorhand bedacht welke
-semantische elementen je nodig zult hebben. Voel je je zelfverzekerd? Kijk dan alleen naar de aandachtspunten en volg
-jouw eigen plan! Als je meer houvast wil, bekijk dan eerst de aandachtspunten en werk daarna de volgende stappen af:
+Je begint met het maken van de header en het introductieblok. Hiervoor heb je op voorhand bedacht welke semantische
+elementen je nodig zult hebben. Voel je je zelfverzekerd? Kijk dan alleen naar de aandachtspunten en volg jouw eigen
+plan! Als je meer houvast wil, bekijk dan eerst de aandachtspunten en werk daarna de volgende stappen af:
 
 1. Zet eerst, *zonder* styling, alle benodigde HTML-elementen voor deze twee blokken in jouw `index.html`. Omdat je hier
    niet bent om je typediploma te halen, raden we je aan de [dummy tekst](#dummy-tekst) te kopiëren!
@@ -68,8 +67,8 @@ jouw eigen plan! Als je meer houvast wil, bekijk dan eerst de aandachtspunten en
 3. **Content positionering**:
     1. **Header**: zorg ervoor dat de content van de header in het midden komt te staan. *Tip*: gebruik padding om de
        header wat meer hoogte te geven en blijf weg van letterlijke `height: 500px` properties.
-    2. **Introductie blok**: doe nu hetzelfde voor de positionering van de introductie-tekst, om dit netjes in
-       het midden te krijgen!
+    2. **Introductie blok**: doe nu hetzelfde voor de positionering van de introductie-tekst, om dit netjes in het
+       midden te krijgen!
 4. **Tekst en button**: nu kun je aan de slag met de details: pas de tekstkleur op beide blokken aan en maak de button
    zo gedetailleerd mogelijk na. Let hierbij bijvoorbeeld op de schaduw onder de button en het kleurverloop op de
    header!
@@ -143,12 +142,12 @@ maak een duidelijk plan voor jezelf over hoe je dit gaat aanpakken.
 
 ### Aandachtspunten
 
-* Alle iconen op de service-tegels vind je terug in de meegeleverde `assets`-map. Dit zijn SVG's die je
-  simpelweg kunt invoegen met een `<img>`-element.
+* Alle iconen op de service-tegels vind je terug in de meegeleverde `assets`-map. Dit zijn SVG's die je simpelweg kunt
+  invoegen met een `<img>`-element.
 * Vergeet de schaduw achter de service-tegels niet!
 * Het services-blok is een mooi voorbeeld van een flexbox-container, waarin je de tegels een basis-breedte kunt geven
-  met de `flex-basis`-property. Denk er aan of de tegels mogen meegroeien of mee krimpen wanneer de schermgrootte
-  zich aanpast.
+  met de `flex-basis`-property. Denk er aan of de tegels mogen meegroeien of mee krimpen wanneer de schermgrootte zich
+  aanpast.
 
 ## Opdracht 5: contactformulier en footer
 
@@ -157,8 +156,8 @@ aandachtspunten goed door en maak een duidelijk plan voor jezelf over hoe je dit
 
 ### Aandachtspunten
 
-* Bouw eerst de basis van het formulier op in HTML. Maak correct gebruik van de submit-button, inputs,
-  labels en `name`-attributen. Doe dit vóór je begint met styling;
+* Bouw eerst de basis van het formulier op in HTML. Maak correct gebruik van de submit-button, inputs, labels en `name`
+  -attributen. Doe dit vóór je begint met styling;
 * Het contact-blok heeft eenzelfde vloeiende kleurverloop als de header;
 * Blijf weg van absolute breedtes wanneer je invoervelden gaat stylen. Gebruik altijd een `width: 100%` en laat het
   formulier (of een ander omwikkelend element) bepalen hoe breed de velden moeten zijn.
