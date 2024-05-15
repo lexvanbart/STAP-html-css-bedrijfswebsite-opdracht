@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        4.3 Case Studies
+        4.4 Services
+        4.5 Contact Form
+        4.6 Footer
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+:root {
+    --header-primary: #5722CD;
+    --header-secondary: #4845E4;
+    --button: #ED4385;
+    --text-main: #0C0C0C;
+    --text-light: #F2F0FF;
+    --body-grey: #F3F6F9;
+    --text-ph: #7A7A7A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited {
+    color: var(--header-primary);
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Merriweather", serif;
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-container {
+    flex-basis: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    padding: 20px;
+   /* border: 1px dashed orange; */
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+.image-wrapper img {
+    width: 100% ;
+    display: block;
+}
+
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.header-section {
+    background: rgb(87,34,205);
+    background: linear-gradient(294deg, rgba(87,34,205,1) 35%, rgba(72,69,228,1) 100%);
+    color: var(--text-light);
+}
+
+
+.header-navigation {
+    width: 100%;
+}
+
+.header-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header-navigation a:link,
+.header-navigation a:visited {
+    color: var(--text-light);
+    padding: 0 16px;
+}
+
+.header-container .line {
+    width: 60px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    color: var(--text-light);
+    background-color: var(--button);
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin: 16px 0;
+}
+
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.introduction-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-wrapper p {
+    font-size: 20px;
+}
+
+/* --------------- 4.3 Case Studies ------------------- */
+
+.article-section {
+    background-color: var(--body-grey);
+    flex-basis: 1200px;
+}
+
+.article-container {
+    display: flex;
+}
+
+.article-container:nth-child(even) {
+    flex-direction: row-reverse;
+
+}
+
+.article-container .line {
+    width: 60px;
+}
+
+.article-wrapper {
+    text-align: left;
+    margin: 16px;
+}
+
+.image-wrapper {
+    box-shadow:  2px 2px 15px var(--text-ph);
+    margin: 0;
+}
+
+/* --------------- 4.4 Services ----------------------- */
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-wrapper {
+    border: 1px solid var(--header-primary);
+    background-color: white;
+    box-shadow:  2px 2px 15px var(--text-ph);
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    margin: 16px;
+}
+
+.service-wrapper p {
+    color: var(--text-ph);
+    font-weight: 400;
+}
+
+.service-wrapper h3 {
+    color: var(--header-primary);
+    font-weight: 700;
+    font-size: 25px;
+    padding:  10px 0px;
+}
+
+.service-icon {
+    height: 70px;
+    
+}
+
+/* --------------- 4.5 Contact Form ------------------- */
+
+.form-section {
+    background: rgb(87,34,205);
+    background: linear-gradient(294deg, rgba(87,34,205,1) 35%, rgba(72,69,228,1) 100%);
+    color: var(--text-light);
+}
+
+
+input,
+textarea {
+    background-color: var(--text-light);
+    width: 100%;
+    border-style: none;
+    border-radius: 4px;
+    padding: 12px;
+    resize: none;
+}
+
+/* --------------- 4.6 Footer ------------------------- */
+
+.footer-section {
+    background-color: var(--text-main);
+    color: var(--text-ph);
+}
+
+.footer-wrapper {
+    padding: 32px;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width:768px) {
+    .article-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .article-container:nth-child(even) {
+        flex-direction: column-reverse;
+    
+    }
+    .image-wrapper {
+        display: block;
+        flex-basis: 200px;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
